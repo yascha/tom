@@ -14,7 +14,7 @@
 
 #include <iostream>
 
-/* Handle all communication with the game engine/framework */
+/* Entire state of the game */
 class Game
 {
 public:

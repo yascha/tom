@@ -24,7 +24,7 @@ public:
     
     Board(unsigned int width, unsigned int height) : width(width), height(height)
     {
-        board = (char*)std::malloc(sizeof(char)*(width*height));
+        board = (char *)std::malloc(sizeof(char) * (width*height));
     };
     
     

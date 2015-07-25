@@ -11,19 +11,23 @@
 
 #include <stdio.h>
 #include <string>
+#include "response.h"
 
-
-
+#define CONTROL_SETTINGS "settings"
+#define CONTROL_UPDATE "update"
+#define CONTROL_ACTION "action"
 
 /* Handle all communication with the game engine/framework */
 class Comms
 {
     
+public:
+
     
     
-    
-    std::string getNextMessage();
+    Response getNextMessageFromEngine();
     void sendMessage(std::string message);
+    
     
 };
 
