@@ -8,15 +8,20 @@
 
 #include <iostream>
 #include <string>
+#include "comms.h"
+#include "game.h"
 
-using namespace std;
 
 int main(int argc, const char * argv[]) {
-    string input;
+    Comms comms;
+    Game game (0, 0);
     
-    cin >> input;
+    std::string input;
     
-    cout << "Hello " + input + "!\n";
+    
+    std::cin >> input;
+    
+    std::cout << "Hello " + input + "!\n";
     
     
     // handle latest input
@@ -40,6 +45,5 @@ int main(int argc, const char * argv[]) {
 // comms -- handles communications from the game engine
 
 // some other stuff related to the specifics of how the actual heuristic turns out (zobrist/hash map)
-
 
 
