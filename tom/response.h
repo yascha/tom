@@ -10,19 +10,34 @@
 #define __tom__response__
 
 #include <stdio.h>
+#include <string>
+
+#define CONTROL_SETTINGS "settings"
+#define CONTROL_UPDATE "update"
+#define CONTROL_ACTION "action"
 
 class Response
 {
     
 public:
-     enum ResponseType { SETTINGS, UPDATE, ACTION, UNKNOWN };
+    enum ResponseType { SETTINGS, UPDATE, ACTION, UNKNOWN };
+    std::string input;
     
+    void setResponseType(ResponseType responseType);
+    
+    // default constructor
+    Response(void) : input("") {}
+
+    // actual constructor
+    Response(std::string input);
+
+    
+private:
     ResponseType responseType;
+    void parseActions();
+    void parseUpdates();
+    void parseSettings();
     
-    Response(Response::ResponseType responseType) : responseType(responseType)
-    {
-        ;
-    }
 };
 
 #endif /* defined(__tom__response__) */

@@ -13,22 +13,19 @@
 #include <string>
 #include "response.h"
 
-#define CONTROL_SETTINGS "settings"
-#define CONTROL_UPDATE "update"
-#define CONTROL_ACTION "action"
-
 /* Handle all communication with the game engine/framework */
 class Comms
 {
+    Response latestResponse;
     
 public:
-
-    
-    
-    Response getNextMessageFromEngine();
+    std::string getNextMessageFromEngine();
     void sendMessage(std::string message);
     
-    
+    Comms(std::string input)
+    {
+        this->latestResponse = Response(input);
+    }
 };
 
 

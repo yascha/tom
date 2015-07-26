@@ -6,14 +6,16 @@
 //  Copyright (c) 2015 tom. All rights reserved.
 //
 
+#include "debug.h"
 #include <iostream>
 #include <string>
 #include "comms.h"
 #include "game.h"
 
 
-int main(int argc, const char * argv[]) {
-    Comms comms;
+int main(int argc, const char * argv[])
+{
+
     Game game (0, 0);
     
     std::string input;
@@ -22,9 +24,10 @@ int main(int argc, const char * argv[]) {
     std::cin >> input;
     
     std::cout << "Hello " + input + "!\n";
+
+    Comms comms(input);
     
-    
-    // handle latest input
+    // parse the latest input
     
     // if we need to make a move, decide on move
     

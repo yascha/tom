@@ -37,6 +37,7 @@
 		F5F3A4971B64370F004542BA /* board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = board.h; sourceTree = "<group>"; };
 		F5F3A4991B64431B004542BA /* response.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = response.cpp; sourceTree = "<group>"; };
 		F5F3A49A1B64431B004542BA /* response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response.h; sourceTree = "<group>"; };
+		F5F3A49C1B655D56004542BA /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +71,15 @@
 			isa = PBXGroup;
 			children = (
 				F5F3A4961B64370F004542BA /* board.cpp */,
-				F5F3A4901B64305E004542BA /* comms.cpp */,
-				F5F3A4931B6435BB004542BA /* game.cpp */,
-				F5F3A4891B640B64004542BA /* main.cpp */,
 				F5F3A4971B64370F004542BA /* board.h */,
+				F5F3A4901B64305E004542BA /* comms.cpp */,
 				F5F3A4911B64305E004542BA /* comms.h */,
+				F5F3A4931B6435BB004542BA /* game.cpp */,
 				F5F3A4941B6435BB004542BA /* game.h */,
+				F5F3A4891B640B64004542BA /* main.cpp */,
 				F5F3A4991B64431B004542BA /* response.cpp */,
 				F5F3A49A1B64431B004542BA /* response.h */,
+				F5F3A49C1B655D56004542BA /* debug.h */,
 			);
 			path = tom;
 			sourceTree = "<group>";
