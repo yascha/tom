@@ -21,23 +21,21 @@ class Response
     
 public:
     enum ResponseType { SETTINGS, UPDATE, ACTION, UNKNOWN };
-    std::string input;
     
     void setResponseType(ResponseType responseType);
+    ResponseType getResponseType(void);
     
-    // default constructor
-//    Response(void) : input("") {}
-
-    // actual constructor
+    
     Response();
     void updateResponse(std::string input);
 
     
 private:
+    std::string input;
     ResponseType responseType;
-    void parseActions();
-    void parseUpdates();
-    void parseSettings();
+    char const * responseData;
+
+
     
 };
 

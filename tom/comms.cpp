@@ -15,7 +15,7 @@ std::string Comms::getNextMessageFromEngine()
     std::string input;
 
     // Get the latest line from the engine
-    std::cin >> input;
+    std::getline(std::cin, input);
     
     return input;
 }

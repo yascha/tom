@@ -18,20 +18,18 @@ int main(int argc, const char * argv[])
 
     std::string input;
     
-    Game game (0, 0);
+    Game game;
     Comms comms("");
     
-    // parse the latest input
+    // get the latest input
     comms.getLatestResponse().updateResponse(comms.getNextMessageFromEngine());
-    
     
     // if we need to make a move, decide on move
     
+    // otherwise, update the game state
+    
     
     // communicate our move to the framework
-    
-    
-    
     
     return 0;
 }
