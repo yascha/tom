@@ -26,10 +26,11 @@ public:
     void setResponseType(ResponseType responseType);
     
     // default constructor
-    Response(void) : input("") {}
+//    Response(void) : input("") {}
 
     // actual constructor
-    Response(std::string input);
+    Response();
+    void updateResponse(std::string input);
 
     
 private:

@@ -16,20 +16,17 @@
 int main(int argc, const char * argv[])
 {
 
-    Game game (0, 0);
-    
     std::string input;
     
-    
-    std::cin >> input;
-    
-    std::cout << "Hello " + input + "!\n";
-
-    Comms comms(input);
+    Game game (0, 0);
+    Comms comms("");
     
     // parse the latest input
+    comms.getLatestResponse().updateResponse(comms.getNextMessageFromEngine());
+    
     
     // if we need to make a move, decide on move
+    
     
     // communicate our move to the framework
     

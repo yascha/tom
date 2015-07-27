@@ -15,7 +15,10 @@
 
 #define DEBUG_ENABLE 1
 
+#ifdef DEBUG
+#undef DEBUG
 #define DEBUG(x) do { std::cerr << x << "\n"; } while (0)
+#endif // DEBUG
 
 
 #endif // DEBUG_H

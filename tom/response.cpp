@@ -18,7 +18,11 @@ void Response::setResponseType(ResponseType responseType)
 
 // Constructor: accepts the full string from the engine and builds
 // the response object
-Response::Response(std::string input)
+Response::Response()
+{
+}
+
+void Response::updateResponse(std::string input)
 {
     this->input = input;
     

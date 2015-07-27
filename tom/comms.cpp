@@ -10,17 +10,22 @@
 #include <iostream>
 
 
-std::string getNextMessageFromEngine()
+std::string Comms::getNextMessageFromEngine()
 {
     std::string input;
 
     // Get the latest line from the engine
     std::cin >> input;
     
-    return (input);
+    return input;
 }
 
-void sendMessage(std::string message)
+void Comms::sendMessage(std::string message)
 {
     std::cout << message;
+}
+
+Response Comms::getLatestResponse(void)
+{
+    return latestResponse;
 }
