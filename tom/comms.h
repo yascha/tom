@@ -11,23 +11,14 @@
 
 #include <stdio.h>
 #include <string>
-#include "response.h"
 
 /* Handle all communication with the game engine/framework */
 class Comms
 {
-    Response latestResponse;
-    
 public:
     
-    Response getLatestResponse();
     std::string getNextMessageFromEngine();
     void sendMessage(std::string message);
-    
-    Comms(std::string input)
-    {
-        this->latestResponse = Response();
-    }
 };
 
 

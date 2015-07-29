@@ -11,7 +11,6 @@
 		F5F3A4921B64305E004542BA /* comms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5F3A4901B64305E004542BA /* comms.cpp */; };
 		F5F3A4951B6435BB004542BA /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5F3A4931B6435BB004542BA /* game.cpp */; };
 		F5F3A4981B64370F004542BA /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5F3A4961B64370F004542BA /* board.cpp */; };
-		F5F3A49B1B64431B004542BA /* response.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5F3A4991B64431B004542BA /* response.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,8 +34,6 @@
 		F5F3A4941B6435BB004542BA /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
 		F5F3A4961B64370F004542BA /* board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = board.cpp; sourceTree = "<group>"; };
 		F5F3A4971B64370F004542BA /* board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = board.h; sourceTree = "<group>"; };
-		F5F3A4991B64431B004542BA /* response.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = response.cpp; sourceTree = "<group>"; };
-		F5F3A49A1B64431B004542BA /* response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = response.h; sourceTree = "<group>"; };
 		F5F3A49C1B655D56004542BA /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +74,6 @@
 				F5F3A4931B6435BB004542BA /* game.cpp */,
 				F5F3A4941B6435BB004542BA /* game.h */,
 				F5F3A4891B640B64004542BA /* main.cpp */,
-				F5F3A4991B64431B004542BA /* response.cpp */,
-				F5F3A49A1B64431B004542BA /* response.h */,
 				F5F3A49C1B655D56004542BA /* debug.h */,
 			);
 			path = tom;
@@ -142,7 +137,6 @@
 			files = (
 				F5F3A48A1B640B64004542BA /* main.cpp in Sources */,
 				F5F3A4921B64305E004542BA /* comms.cpp in Sources */,
-				F5F3A49B1B64431B004542BA /* response.cpp in Sources */,
 				F5F3A4981B64370F004542BA /* board.cpp in Sources */,
 				F5F3A4951B6435BB004542BA /* game.cpp in Sources */,
 			);

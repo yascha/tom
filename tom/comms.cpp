@@ -24,8 +24,3 @@ void Comms::sendMessage(std::string message)
 {
     std::cout << message;
 }
-
-Response Comms::getLatestResponse(void)
-{
-    return latestResponse;
-}
